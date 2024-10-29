@@ -1,0 +1,86 @@
+body {
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.h1 {
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+}
+
+.probability-graph {
+  width: 30px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.bar-female {
+  background-color: #db22db;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: height 0.5s;
+  border-radius: 5px;
+}
+
+.bar-male {
+  background-color: #362de7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: height 0.5s;
+  border-radius: 5px;
+}
+
+.pie-chart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background: conic-gradient(#4caf50 0%, #4caf50 0%);
+}
+
+.slice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% 50%, 100% 100%);
+  background: conic-gradient(#ffffff 0%, #ffffff 0%);
+}
+
+.slice:nth-child(1) {
+  clip-path: polygon(50% 50%, 100% 50%, 100% 100%);
+  background: conic-gradient(#ffffff 0%, #ffffff 0%);
+}
+
+.centered {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+#ethnicities {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#ethnicities li {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1 0 calc(33.33% - 20px);
+}
